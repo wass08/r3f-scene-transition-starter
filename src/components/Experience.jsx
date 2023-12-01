@@ -71,6 +71,7 @@ export const Experience = () => {
       delta * transitionSpeed
     );
     gl.render(scene, renderCamera.current);
+
     gl.setRenderTarget(renderTarget2);
 
     // EXAMPLE
@@ -163,7 +164,6 @@ export const Experience = () => {
 
       <mesh>
         <planeGeometry args={[viewport.width, viewport.height]} />
-        {/* <meshBasicMaterial toneMapped={false} ref={renderMaterial} /> */}
         <transitionMaterial
           ref={renderMaterial}
           tex={renderTarget.texture}
